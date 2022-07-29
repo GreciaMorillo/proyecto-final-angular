@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ContenidoModule } from './contenido/contenido.module';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,9 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContenidoModule
+    HttpClientModule,
+    ContenidoModule,
+
 
 
   ],

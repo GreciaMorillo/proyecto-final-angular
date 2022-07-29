@@ -1,0 +1,143 @@
+<header class="u-clearfix u-header u-header" id="sec-2244">
+  <div class="u-clearfix u-sheet u-sheet-1">
+  <a href="" class="u-image u-logo u-image-1">
+    <img src="./assets/images/logo.png" class="u-logo-image u-logo-image-1">
+  </a>
+  <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+    <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+      <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+        <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+      </a>
+    </div>
+    <div class="u-nav-container">
+      <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Casa.html" style="padding: 10px 94px;">Inicio</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#nosotros" style="padding: 10px 94px;">Nosotros</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#recursos" style="padding: 10px 94px;">Recursos</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#destacado" style="padding: 10px 94px;">Destacado</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#contacto" style="padding: 10px 94px;">contacto</a>
+</li></ul>
+    </div>
+    <div class="u-nav-container-collapse">
+      <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+        <div class="u-inner-container-layout u-sidenav-overflow">
+          <div class="u-menu-close"></div>
+          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Casa.html">Casa</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Acerca-de.html">Acerca de</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contacto.html">Contacto</a>
+</li></ul>
+        </div>
+      </div>
+      <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+    </div>
+  </nav>
+</div></header>
+<div class="container px-4 py-5" id="featured-3">
+  <h2 class="pb-2 border-bottom" style="background: #e6d308;">CURSOS DISPONIBLES</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col" *ngFor="let item of cursos">
+      <div class="card mr-4" style="width: 18rem;">
+        <img src="http://localhost:8087/api/uploads/img/{{item.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.nombre}}</h5>
+          <p class="card-text">{{item.ciudades.nombre}}</p>
+          <p class="card-text">{{item.centros.nombre}}</p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>
+    <!--<div class="feature col">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/images/cursos5.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature col">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/images/cursos6.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature col">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/images/cursos7.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature col">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/images/cursos8.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature col">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/images/cursos1.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature col">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/images/cursos4.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature col">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/images/cursos10.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature col">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../assets/images/cursos9.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Información</a>
+        </div>
+      </div>
+
+    </div>-->
+
+
+  </div>
+
+</div>
